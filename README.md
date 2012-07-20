@@ -23,3 +23,9 @@ COMMANDS
 `runserver` or `-rs`
 
     python manage.py runserver
+
+***
+
+`superuser` or `-su`
+
+    python manage.py createsuperuser

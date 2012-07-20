@@ -25,7 +25,13 @@ if [ $1 == 'migrate' ] || [ $1 == '-m' ]
 elif [ $1 == 'runserver' ] || [ $1 == '-rs' ]
   then
     echo "================================================"
-    echo "Starting server for "$2
+    echo "Starting server..."
     echo "================================================"
     python manage.py runserver
+elif [ $1 == 'superuser' ] || [ $1 == '-su' ]
+  then
+    echo "================================================"
+    echo "Creating SuperUser"
+    echo "================================================"
+    python manage.py createsuperuser
 fi
