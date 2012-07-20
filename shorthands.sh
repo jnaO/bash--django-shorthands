@@ -9,8 +9,9 @@
 # if anyone else breaks something for you because of this program
 # don't blame me.
 #
-# Source is found @ https://github.com/jnaO/file_backup
+# Source is found @ https://github.com/jnaO/my_django_shorthands
 #
+
 if [ $1 == 'migrate' ] || [ $1 == '-m' ]
   then
     echo "================================================"
@@ -21,4 +22,10 @@ if [ $1 == 'migrate' ] || [ $1 == '-m' ]
     echo "Migrating "$2
     echo "================================================"
     python manage.py migrate $2
+elif [ $1 == 'runserver' ] || [ $1 == '-rs' ]
+  then
+    echo "================================================"
+    echo "Starting server for "$2
+    echo "================================================"
+    python manage.py runserver
 fi
