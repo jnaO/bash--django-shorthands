@@ -14,8 +14,10 @@ USAGE
 COMMANDS
 --------
 `migrate` or `-m` -- needs appname as argument
- - `python manage.py schemamigration APP_NAME --auto`
- - `python manage.py migrate APP_NAME`
+    python manage.py schemamigration APP_NAME --auto
+    python manage.py migrate APP_NAME
+
+***
 
 `runserver` or `-rs`
- - `python manage.py runserver`
+    python manage.py runserver
