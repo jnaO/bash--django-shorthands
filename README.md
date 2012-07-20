@@ -20,7 +20,7 @@ COMMANDS
 
 ***
 
-`runserver` or `-rs`
+`runserver` or `-s`
 
     python manage.py runserver
 

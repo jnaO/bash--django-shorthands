@@ -22,7 +22,7 @@ if [ $1 == 'migrate' ] || [ $1 == '-m' ]
     echo "Migrating "$2
     echo "================================================"
     python manage.py migrate $2
-elif [ $1 == 'runserver' ] || [ $1 == '-rs' ]
+elif [ $1 == 'runserver' ] || [ $1 == '-s' ]
   then
     echo "================================================"
     echo "Starting server..."
