@@ -28,6 +28,12 @@ elif [ $1 == 'runserver' ] || [ $1 == '-s' ]
     echo "Starting server..."
     echo "================================================"
     python manage.py runserver
+elif [ $1 == 'test' ] || [ $1 == '-t' ]
+  then
+    echo "================================================"
+    echo "Running test suite $2..."
+    echo "================================================"
+    python manage.py test $2
 elif [ $1 == 'superuser' ] || [ $1 == '-su' ]
   then
     echo "================================================"
