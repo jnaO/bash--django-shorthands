@@ -28,6 +28,12 @@ elif [ $1 == 'runserver' ] || [ $1 == '-s' ]
     echo "Starting server..."
     echo "================================================"
     python manage.py runserver
+elif [ $1 == 'runserver-out' ] || [ $1 == '-so' ]
+  then
+    echo "================================================"
+    echo "Starting server..."
+    echo "================================================"
+    python manage.py runserver
 elif [ $1 == 'test' ] || [ $1 == '-t' ]
   then
     echo "================================================"
