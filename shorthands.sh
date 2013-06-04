@@ -33,7 +33,7 @@ elif [ $1 == 'runserver-out' ] || [ $1 == '-so' ]
     echo "================================================"
     echo "Starting server..."
     echo "================================================"
-    python manage.py runserver
+    python manage.py runserver 0.0.0.0:8000
 elif [ $1 == 'test' ] || [ $1 == '-t' ]
   then
     echo "================================================"
